@@ -151,9 +151,7 @@
     }
 }
 
-.navbar.scrolled {
-    background-color: blue; /* Or your desired color */
-}
+
 /*** Header carousel ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
@@ -441,4 +439,12 @@ nav img {
 }
 .element{
     color: #F0FBFC;
+}
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+    background-color: white; /* Initial background color */
+}
+
+.navbar.scrolled {
+    background-color: black !important; /* Background color after scrolling */
 }

@@ -151,7 +151,9 @@
     }
 }
 
-
+.navbar.scrolled {
+    background-color: blue; /* Or your desired color */
+}
 /*** Header carousel ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {

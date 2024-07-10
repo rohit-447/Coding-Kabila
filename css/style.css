@@ -122,10 +122,18 @@ body{
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--light);
+    color: var(--dark);
     font-weight: 500;
 }
+/* Styles for the home page */
+.navbar.home-page .navbar-nav .nav-link {
+    color: var(--light);
+}
 
+.navbar.home-page .navbar-nav .nav-link:hover,
+.navbar.home-page .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
 .navbar-light.sticky-top {
     top: -100px;
     transition: .5s;

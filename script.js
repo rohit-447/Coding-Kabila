@@ -16,10 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
+    if (window.location.pathname.includes("index.html")) {
+        navbar.classList.add("home-page");
+    }
+
+
     var changeColorPosition = 100; // Adjust this value as needed
 
     window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
+        
 
         if (scrollPosition >= changeColorPosition) {
             navbar.classList.add("scrolled");

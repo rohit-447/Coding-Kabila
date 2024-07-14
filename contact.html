@@ -29,6 +29,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Email service and captcha-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        (function() {
+            emailjs.init("q9FJAg4D3QlK60rpm"); // Replace with your EmailJS user ID
+        })();
+    </script>
 </head>
 
 <body>
@@ -127,32 +136,33 @@
                         tabindex="0"></iframe>
                 </div>
                 <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+                    <form id="contact-form">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                     <label for="email">Your Email</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                                     <label for="subject">Subject</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                             </div>
+                            <div class="g-recaptcha" data-sitekey="6LdKsQ8qAAAAAK09aIi4xeQqoHhLnXYB8ipfoeuM"></div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                             </div>
@@ -234,7 +244,40 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
+    <script> 
+        // email and captcha service
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            const emailField = document.getElementById('email');
+            const emailValue = emailField.value;
+        
+            // Simple validation for Gmail addresses
+            if (!emailValue.endsWith('@gmail.com')) {
+                alert('Please enter a valid Gmail address.');
+                return;
+            }
+        
+            // reCAPTCHA validation
+            const recaptchaResponse = grecaptcha.getResponse();
+            if (recaptchaResponse.length === 0) {
+                alert('Please complete the CAPTCHA.');
+                return;
+            }
+        
+            const serviceID = 'service_quy93x4'; // Replace with your EmailJS service ID
+            const templateID = 'template_srg4w34';   // Replace with your EmailJS template ID
+        
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(function() {
+                    alert('Email sent successfully!');
+                    grecaptcha.reset(); // Reset reCAPTCHA
+                }, function(error) {
+                    alert('Failed to send email. Error: ' + JSON.stringify(error));
+                });
+        });
+        </script>
 </body>
 
 </html>

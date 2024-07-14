@@ -315,10 +315,12 @@ body{
     left: 0;
     height: 100%;
     width: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: rgba(255, 255, 255, 0.5);
     z-index: 1;
 }
-
+.owl-item.active.center{
+    background-color: white !important;
+}
 .testimonial-carousel::after {
     position: absolute;
     content: "";

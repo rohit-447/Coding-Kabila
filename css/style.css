@@ -8,6 +8,13 @@ body{
     background-color: black;
     
 }
+@font-face {
+    src: url('../Elianto-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Elianto', sans-serif;
+                                                
+}
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -451,8 +458,24 @@ nav img {
     height: 70px;
     width: 70px;
 }
-.element{
+.element {
     color: #F0FBFC;
+    font-family: 'Elianto', sans-serif;             
+    font-weight: normal;
+    font-style: normal;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(12.5px); /* For Safari */
+    backdrop-filter: blur(12.5px); /* Standard */
+
+    /* Adjust padding to fit the content */
+    padding: 0.5em 1em; /* Example padding, adjust as needed */
+   display: inline-block;/* Ensures the element wraps around the content */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+}
+
+
 }
 .navbar {
     background-color: white;

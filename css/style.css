@@ -1,12 +1,18 @@
 /********** Template CSS **********/
 :root {
-    --primary: #06BBCC;
+    --primary: #ff7100;
     --light: white;
     --dark: black;
 }
 body{
     background-color: black;
     
+}
+.color-orange{
+    color: #ff7100;
+}
+.bg-black{
+background-color: black;
 }
 @font-face {
     src: url('../Elianto-Regular.otf') format('opentype');
@@ -329,7 +335,7 @@ body{
     left: 0;
     height: 100%;
     width: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
 }
 .owl-item.active.center{

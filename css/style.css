@@ -496,7 +496,7 @@ nav img {
     border-bottom: #ff7100 solid 2px !important;
 }
 #clr-white{
-    color: white;
+    color: white !important;
 }
 .Orbitron-font{
     font-family: "Orbitron", sans-serif;

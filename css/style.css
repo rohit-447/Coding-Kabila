@@ -506,3 +506,8 @@ nav img {
   letter-spacing: 0.1em;
 }
 .navbar h2{font-family: "Orbitron", sans-serif;}
+.ahtext{
+text-decoration: none; color: white;}
+.ahtext:hover{
+    color: #ff7100;
+}

@@ -15,6 +15,13 @@ body{
     font-family: 'Elianto', sans-serif;
                                                 
 }
+@font-face {
+    src: url('../Mylodon-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Mylodon', sans-serif;
+                                                
+}
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -480,6 +487,7 @@ nav img {
 .navbar {
     background-color: white;
     transition: background-color 0.3s ease-in-out;
+    font-family: "Orbitron", sans-serif;
     
 }
 
@@ -490,3 +498,11 @@ nav img {
 #clr-white{
     color: white;
 }
+.Orbitron-font{
+    font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  word-spacing: 0.2em;
+  letter-spacing: 0.1em;
+}
+.navbar h2{font-family: "Orbitron", sans-serif;}

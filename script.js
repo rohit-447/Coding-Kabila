@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (scrollPosition >= changeColorPosition) {
             navbar.classList.add("scrolled");
-            logo.src = "img/logo-white.avif"; // Path to the white logo
+            logo.src = "img/logo-white.webp"; // Path to the white logo
             codingSpan.classList.add("clr-white");
         } else {
             navbar.classList.remove("scrolled");
-            logo.src = "img/logo.png"; // Path to the original logo
+            logo.src = "img/logo.webp"; // Path to the original logo
             codingSpan.classList.remove("clr-white");
         }
     });

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (scrollPosition >= changeColorPosition) {
             navbar.classList.add("scrolled");
-            logo.src = "img/logo-white.png"; // Path to the white logo
+            logo.src = "img/logo-white.avif"; // Path to the white logo
             codingSpan.classList.add("clr-white");
         } else {
             navbar.classList.remove("scrolled");

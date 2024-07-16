@@ -494,16 +494,30 @@ nav img {
     background-color: white;
     transition: background-color 0.3s ease-in-out;
     font-family: "Orbitron", sans-serif;
-    
+    color: black !important;
 }
 
 .navbar.scrolled {
     background-color: black !important; /* Background color after scrolling */
     border-bottom: #ff7100 solid 2px !important;
 }
-#clr-white{
+
+#clr-white {
     color: white !important;
 }
+
+.clr-blue {
+    color:#007FFF;
+}
+
+.navbar.clr-black {
+    color: black;
+}
+
+.clr-white {
+    color: white !important;
+}
+
 .Orbitron-font{
     font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;

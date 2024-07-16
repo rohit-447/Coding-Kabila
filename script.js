@@ -11,28 +11,25 @@ new TypeIt(".element", {
 document.addEventListener("DOMContentLoaded", function () {
     var navbar = document.getElementById("navbar");
     var logo = navbar.querySelector("img"); // Assuming the logo is the first <img> element within the navbar
-    if (!navbar || !logo) {
-        console.error("Navbar or logo element not found!");
+    var spans = navbar.getElementsByTagName("span");
+    var codingSpan = navbar.querySelector(".clr-black"); // Selecting the span that contains "Coding"
+    
+    if (!navbar || !logo || !codingSpan) {
+        console.error("Navbar, logo, or coding span element not found!");
         return;
     }
-
-    if (window.location.pathname.includes("index.html")) {
-        navbar.classList.add("home-page");
-    }
-
-
     var changeColorPosition = 100; // Adjust this value as needed
-
     window.addEventListener("scroll", function () {
         var scrollPosition = window.scrollY;
-        
 
         if (scrollPosition >= changeColorPosition) {
             navbar.classList.add("scrolled");
             logo.src = "img/logo-white.png"; // Path to the white logo
+            codingSpan.classList.add("clr-white");
         } else {
             navbar.classList.remove("scrolled");
             logo.src = "img/logo.png"; // Path to the original logo
+            codingSpan.classList.remove("clr-white");
         }
     });
 });

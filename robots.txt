@@ -5,4 +5,4 @@ Disallow: /cgi-bin/
 Allow: /*.html
 
 # Specify the location of the sitemap
-Sitemap: https://codingkabila.tech/index.html/sitemap.xml
+Sitemap: https://codingkabila.tech/sitemap.xml

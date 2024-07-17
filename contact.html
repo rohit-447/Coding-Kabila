@@ -53,11 +53,7 @@
     <!-- Email service and captcha-->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        (function() {
-            emailjs.init("q9FJAg4D3QlK60rpm"); // Replace with your EmailJS user ID
-        })();
-    </script> <!-- Google tag (gtag.js) -->
+    <script>emailjs.init("q9FJAg4D3QlK60rpm");</script> <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8R7VPDQYCE"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -269,40 +265,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="../script.js"></script>
-    <script> 
-        // email and captcha service
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-        
-            const emailField = document.getElementById('email');
-            const emailValue = emailField.value;
-        
-            // Simple validation for Gmail addresses
-            if (!emailValue.endsWith('@gmail.com')) {
-                alert('Please enter a valid Gmail address.');
-                return;
-            }
-        
-            // reCAPTCHA validation
-            const recaptchaResponse = grecaptcha.getResponse();
-            if (recaptchaResponse.length === 0) {
-                alert('Please complete the CAPTCHA.');
-                return;
-            }
-        
-            const serviceID = 'service_quy93x4'; // Replace with your EmailJS service ID
-            const templateID = 'template_srg4w34';   // Replace with your EmailJS template ID
-        
-            emailjs.sendForm(serviceID, templateID, this)
-                .then(function() {
-                    alert('Email sent successfully!');
-                    grecaptcha.reset(); // Reset reCAPTCHA
-                }, function(error) {
-                    alert('Failed to send email. Error: ' + JSON.stringify(error));
-                });
-        });
-        </script>
+    <script> document.getElementById("contact-form").addEventListener("submit",function(e){e.preventDefault();const t=document.getElementById("email").value;t.endsWith("@gmail.com")?0!==grecaptcha.getResponse().length?emailjs.sendForm("service_quy93x4","template_srg4w34",this).then(function(){alert("Email sent successfully!"),grecaptcha.reset()},function(e){alert("Failed to send email. Error: "+JSON.stringify(e))}):alert("Please complete the CAPTCHA."):alert("Please enter a valid Gmail address.")}); </script>
 </body>
 
 </html>

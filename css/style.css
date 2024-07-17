@@ -14,13 +14,7 @@ body{
 .bg-black{
 background-color: black;
 }
-@font-face {
-    src: url('../Elianto-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'Elianto', sans-serif;
-                                                
-}
+@import url('https://fonts.cdnfonts.com/css/elianto');
 @font-face {
     src: url('../Mylodon-Light.otf') format('opentype');
     font-weight: normal;

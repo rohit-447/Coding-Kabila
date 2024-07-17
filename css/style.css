@@ -134,6 +134,10 @@ background-color: black;
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
+    .img-photo{
+        height: 80%;
+        width: 80%;
+    }
 }
 
 .navbar-light .navbar-brand,
@@ -530,4 +534,8 @@ nav img {
 text-decoration: none; color: white;}
 .ahtext:hover{
     color: #ff7100;
+}
+.img-photo{
+    height: 100%;
+    width: 100%;
 }

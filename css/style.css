@@ -497,7 +497,6 @@ nav img {
 
 .navbar.scrolled {
     background-color: black !important; /* Background color after scrolling */
-    border-bottom: #ff7100 solid 2px !important;
 }
 
 #clr-white {
@@ -532,4 +531,12 @@ text-decoration: none; color: white;}
 .img-photo{
     height: 100%;
     width: 100%;
+}
+#loader-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #00BFFF, #00FFFF);
 }

@@ -7,3 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("loader-bar").style.width = scrolled + "%";
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var popup = document.getElementById("popup");
+    var closeBtn = document.getElementById("close-popup");
+
+    // Show the popup after a delay
+    setTimeout(function () {
+        popup.classList.add("show");
+    }, 1000); // Delay of 1 second
+
+    // Close the popup when the close button is clicked
+    closeBtn.addEventListener("click", function () {
+        popup.classList.remove("show");
+    });
+});

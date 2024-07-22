@@ -141,14 +141,14 @@
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0"><img src="img/logo.webp" alt="logo-image"><span class="clr-black">Coding</span><span  class="clr-blue"> Kabila<span></h2>
         </a>
-        <button type="button" class="navbar-toggler me-4 clr-white" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon" style="background-color: white;"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <div class="navbar-nav ms-auto text-dark p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link clr-white">About</a>
-                <a href="contact.html" class="nav-item nav-link clr-white">Contact</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <a href="join.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -460,8 +460,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>new TypeIt(".element",{strings:["Coding Kabila","Welcomes You..."],speed:50,waitUntilVisible:!0,html:!0,css:{color:"blue"}}).go(),document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("navbar"),o=e.querySelector("img"),l=(e.getElementsByTagName("span"),e.querySelector(".clr-black"));e&&o&&l?window.addEventListener("scroll",function(){100<=window.scrollY?(e.classList.add("scrolled"),o.src="img/logo-white.webp",l.classList.add("clr-white")):(e.classList.remove("scrolled"),o.src="img/logo.webp",l.classList.remove("clr-white"))}):console.error("Navbar, logo, or coding span element not found!")});</script>
-    
+   <script>new TypeIt(".element",{strings:["Coding Kabila","Welcomes You..."],speed:50,waitUntilVisible:!0}).go(),document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("navbar"),l=e.querySelector("img"),r=e.querySelector(".clr-black"),o=e.querySelectorAll("#navbarCollapse .navbar-nav a");if(!e||!l||!r||0===o.length){console.error("Navbar, logo, or coding span element not found!");return}window.addEventListener("scroll",function(){window.scrollY>=100?(e.classList.add("scrolled"),l.src="img/logo-white.webp",r.classList.add("clr-white"),o.forEach(function(e){e.classList.add("clr-white")})):(e.classList.remove("scrolled"),l.src="img/logo.webp",r.classList.remove("clr-white"),o.forEach(function(e){e.classList.remove("clr-white")}))})});</script>
 </body>
 
 </html>

@@ -590,3 +590,21 @@ text-decoration: none; color: white;}
     opacity: 1;
     visibility: visible;
 }
+/* WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 8px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+::-webkit-scrollbar-track {
+    background:transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff7100;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#00BFFF;
+}

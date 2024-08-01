@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /team.html
+Disallow: /cgi-bin/
+
+Allow: /*.html
+
+# Specify the location of the sitemap
+Sitemap: https://codingkabila.tech/sitemap.xml

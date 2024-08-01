@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://codingkabila.tech/</loc>
+  <lastmod>2024-07-16T19:35:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://codingkabila.tech/index.html</loc>
+  <lastmod>2024-07-16T19:35:46+00:00</lastmod>
+  <priority>0.99</priority>
+</url>
+<url>
+  <loc>https://codingkabila.tech/about.html</loc>
+  <lastmod>2024-07-16T19:35:46+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://codingkabila.tech/contact.html</loc>
+  <lastmod>2024-07-16T19:35:46+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>https://codingkabila.tech/join.html</loc>
+  <lastmod>2024-07-16T19:35:46+00:00</lastmod>
+  <priority>0.95</priority>
+</url>
+
+
+</urlset>

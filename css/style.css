@@ -592,7 +592,7 @@ text-decoration: none; color: white;}
 }
 /* WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 8px; /* Width of the scrollbar */
     height: 8px; /* Height of the scrollbar for horizontal scrolling */
 }
 
@@ -608,6 +608,6 @@ text-decoration: none; color: white;}
 ::-webkit-scrollbar-thumb:hover {
     background:#00BFFF;
 }
-policy{color: white;}
-policy h1,h2,h3,h4,h5,h6 {color: #ff7100; gap: 25px;}
-policy h1{ text-align: center; margin: 10px,0,100px,0; }
+.policy{color: black; background-color: white; width: 70%; margin-left: 15%; margin-top: 5%; padding: 2%;}
+.policy h1,h2,h3,h4,h5,h6 {color:black}
+.policy h1{ text-align: center; margin: 10px,0,100px,0; }

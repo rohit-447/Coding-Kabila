@@ -611,3 +611,6 @@ text-decoration: none; color: white;}
 .policy{color: black; background-color: white; width: 70%; margin-left: 15%; margin-top: 5%; padding: 2%;}
 .policy h1,h2,h3,h4,h5,h6 {color:black}
 .policy h1{ text-align: center; margin: 10px,0,100px,0; }
+.wp:hover{color:white !important; background-color: 	#25d366; }
+.linkedin:hover{color:white !important; background-color: 	#0077B5; }
+.gthb:hover{color:black !important; background-color: white; }

@@ -58,62 +58,7 @@
     </script>
     
     <style>
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 70px;
-    }
-        
-        .social-icon {
-            position: relative;
-        }
-        
-        .social-icon i {
-            cursor: pointer;
-            color: #fff;
-            transition: color 0.3s;
-            position: relative; /* Ensure relative positioning for absolute popup */
-        }
-        
-        .social-icon:hover i {
-            color: #ff7100;
-        }
-        
-        .popup-card {
-            position: absolute;
-            top: -120%; /* Adjust to position above the icon */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            transition: opacity 0.3s, visibility 0.3s;
-            z-index: 1;
-            visibility: hidden;
-            opacity: 0;
-        }
-        
-        .social-icon:hover .popup-card {
-            top: -700%; /* Adjust to position above the icon */
-            visibility: visible;
-            opacity: 1;
-        }
-        
-        .popup-card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-        
-        .popup-card p {
-            margin: 0;
-            font-size: 14px;
-            color: #333;
-        }
+    
     </style>
 </head>
 
@@ -129,18 +74,18 @@
 
 
     <!-- Navbar Start -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow sticky-top p-0 nav-bar-color">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow sticky-top p-0 nav-bar-color scrolled">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0"><img src="img/logo.webp" alt="logo-image"><span class="clr-black">Coding</span><span  class="clr-blue"> Kabila<span></h2>
+            <h2 class="m-0"><img src="img/logo-white.webp" alt="logo-image"><span class="clr-white">Coding</span><span  class="clr-blue"> Kabila<span></h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="index.html" class="nav-item nav-link clr-white">Home</a>
+                <a href="about.html" class="nav-item nav-link clr-white">About</a>
+                <a href="contact.html" class="nav-item nav-link clr-white">Contact</a>
             </div>
             <a href="join.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block active">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -211,28 +156,28 @@
     <div class="container">
         <div class="social-icons">
             <div class="social-icon">
-                <a href="https://github.com/CodingKabila"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://github.com/CodingKabila"><i class="fab fa-github fa-2x gthb"></i></a>
                 <div class="popup-card">
                     <img src="img/qr/qr-github .avif" alt="GitHub QR Code">
                     <p>github</p>
                 </div>
             </div>
             <div class="social-icon">
-                <a href="https://x.com/codingkabila"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://x.com/codingkabila"><i class="fab fa-x-twitter fa-2x gthb"></i></a>
                 <div class="popup-card">
                     <img src="img/qr/qr-x .avif" alt="Twitter QR Code">
                     <p>Twitter</p>
                 </div>
             </div>
             <div class="social-icon">
-                <a href="https://chat.whatsapp.com/Cxhy8v0zXLJ5qCT8fwV5g3"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="https://chat.whatsapp.com/Cxhy8v0zXLJ5qCT8fwV5g3"><i class="fab fa-whatsapp fa-2x wp"></i></a>
                 <div class="popup-card">
                     <img src="img/qr/qr-wp .avif" alt="Whatsapp QR Code">
                     <p>Whatsapp</p>
                 </div>
             </div>
             <div class="social-icon">
-                <a href="https://www.linkedin.com/groups/14482765/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                <a href="https://www.linkedin.com/groups/14482765/"><i class="fab fa-linkedin-in fa-2x linkedin"></i></a>
                 <div class="popup-card">
                     <img src="img/qr/qr-lon .avif" alt="LinkedIn QR Code">
                     <p>LinkedIn</p>

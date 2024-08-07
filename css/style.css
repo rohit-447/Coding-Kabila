@@ -615,3 +615,56 @@ text-decoration: none; color: white;}
 .wp:hover{color:white !important; background-color: 	#25d366; }
 .linkedin:hover{color:white !important; background-color: 	#0077B5; }
 .gthb:hover{color:black !important; background-color: white; }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+}
+    
+    .social-icon {
+        position: relative;
+    }
+    
+    .social-icon i {
+        cursor: pointer;
+        color: #fff;
+        transition: color 0.3s;
+        position: relative; /* Ensure relative positioning for absolute popup */
+    }
+    
+    .popup-card {
+        position: absolute;
+        top: -120%; /* Adjust to position above the icon */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+        transition: opacity 0.3s, visibility 0.3s;
+        z-index: 1;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    .social-icon:hover .popup-card {
+        top: -700%; /* Adjust to position above the icon */
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .popup-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .popup-card p {
+        margin: 0;
+        font-size: 14px;
+        color: #333;
+    }

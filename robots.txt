@@ -1,5 +1,8 @@
 User-agent: *
 Disallow: /team.html
+Disallow: /terms.html
+Disallow: /privacy poicy.html
+Disallow: /404.html
 Disallow: /cgi-bin/
 
 Allow: /*.html

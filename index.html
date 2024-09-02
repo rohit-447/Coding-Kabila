@@ -181,7 +181,9 @@
     <div class="container-fluid p-0 mb-5 ">
         <div class=" position-relative">
             <div class="position-relative">
-                <video  width="100%" preload="metadata" loop ><source src="bgVideo.mp4" type="video/mp4"></video>
+                <!-- <video  autoplay width="100%"><source src="../img/v1.mp4" type="video/mp4"></video> -->
+                <video id="video1" autoplay="autoplay" preload="auto" width="100%"><source src="../img/v1.mp4"></video>
+                <video id="video2" src="../img/abc.mp4" loop width="100%"></video>
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -482,6 +484,25 @@
         var infolinks_wsid = 0;
         </script>
         <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+
+        <script>
+            // Select both videos
+            const video1 = document.getElementById('video1');
+            const video2 = document.getElementById('video2');
+    
+            // Hide the second video initially
+            video2.style.display = 'none';
+    
+            // When the first video ends, start the second one
+            video1.onended = function () {
+                video1.style.display = 'none'; // Hide the first video
+                video2.style.display = 'block'; // Show the second video
+                video2.play(); // Start playing the second video
+            };
+    
+            // Start the first video automatically
+            video1.play();
+        </script>
 </body>
 
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Sequence</title>
+    <style>
+        video {
+            width: 100%;
+            height: auto;
+            max-width: 600px; /* Optional: Adjust size */
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <video id="video1" src="../img/v1.mp4" autoplay></video>
+    <video id="video2" src="../img/abc.mp4" loop></video>
+
+    <script>
+        // Select both videos
+        const video1 = document.getElementById('video1');
+        const video2 = document.getElementById('video2');
+
+        // Hide the second video initially
+        video2.style.display = 'none';
+
+        // When the first video ends, start the second one
+        video1.onended = function () {
+            video1.style.display = 'none'; // Hide the first video
+            video2.style.display = 'block'; // Show the second video
+            video2.play(); // Start playing the second video
+        };
+
+        // Start the first video automatically
+        video1.play();
+    </script>
+
+</body>
+</html>

@@ -75,7 +75,6 @@
 
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <link href="https://db.onlinewebfonts.com/c/5aed06c88c643ae6f0d4d1027893350c?family=Elianto" rel="stylesheet">
-    <link rel="preload" href="..img/bgVideo.mp4" as="image">
     <script type="application/ld+json">
         {
           "@context": "https://schema.org/", 
@@ -182,8 +181,9 @@
         <div class=" position-relative">
             <div class="position-relative">
                 <!-- <video  autoplay width="100%"><source src="../img/v1.mp4" type="video/mp4"></video> -->
-                <video id="video1" autoplay="autoplay" preload="auto" width="100%"><source src="../img/v1.mp4"></video>
-                <video id="video2" src="../img/abc.mp4" loop width="100%"></video>
+                <video id="video1" autoplay playsinline muted  loop width="100%" controls="controls">
+                    <source src="../img/obt.mp4" type="video/mp4">
+                </video>
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -486,22 +486,7 @@
         <script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
 
         <script>
-            // Select both videos
-            const video1 = document.getElementById('video1');
-            const video2 = document.getElementById('video2');
-    
-            // Hide the second video initially
-            video2.style.display = 'none';
-    
-            // When the first video ends, start the second one
-            video1.onended = function () {
-                video1.style.display = 'none'; // Hide the first video
-                video2.style.display = 'block'; // Show the second video
-                video2.play(); // Start playing the second video
-            };
-    
-            // Start the first video automatically
-            video1.play();
+           
         </script>
 </body>
 
